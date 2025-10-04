@@ -30,7 +30,45 @@
 </head>
 
 <body>
-    <header>
+    <!-- movil y tablets -->
+    <header class="d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/img/logo.webp" alt="imagen del logo" style="height: 50px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCoffee"
+                    aria-controls="navbarCoffee" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCoffee">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.htm">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/eventos.htm">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.htm">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- vista desktop-->
+    <header class="d-none d-lg-block">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-1 col-md-6 col-lg-7 col-xl-8 col-xxl-8">
