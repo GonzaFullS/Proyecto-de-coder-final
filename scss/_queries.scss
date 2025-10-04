@@ -36,3 +36,17 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    main {
+        section {
+            div {
+                div {
+                    img {
+                        max-width: 30vh;
+                    }
+                }
+            }
+        }
+    }
+}

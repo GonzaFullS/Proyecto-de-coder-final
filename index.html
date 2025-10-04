@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto Coffee House</title>
+    <title>Inicio Coffee House</title>
     <!-- Metadescripción-->
     <meta name="description"
         content="Coffee House es tu cafetería de confianza en el corazón del barrio. Disfrutá café de especialidad, eventos únicos y un ambiente cálido todos los días de 8 a 20.">
-    <!-- keywords-->
+    <!--keywords-->
     <meta name="keywords"
         content="cafetería, café, coffee house, eventos, reservas, desayuno, merienda, especialidad, barista">
     <!--inicio bootstrap-->
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <!--final iconos-->
     <!--inicio css-->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!--final css-->
     <!--inicio fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,19 +47,19 @@
                 <div class="collapse navbar-collapse" id="navbarCoffee">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/index.htm">Inicio</a>
+                            <a class="nav-link active" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menú</a>
+                            <a class="nav-link" href="/pages/menu.html">Menú</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="eventos.htm">Eventos</a>
+                            <a class="nav-link" href="/pages/eventos.html">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="reservas.html">Reservas</a>
+                            <a class="nav-link" href="/pages/reservas.html">Reservas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.htm">Contacto</a>
+                            <a class="nav-link" href="/pages/contacto.htm">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -76,42 +76,50 @@
                 </div>
                 <nav class="col-11 col-md-6 col-lg-5 col-xl-4 col-xxl-4">
                     <ul>
-                        <li><a href="/index.htm" class="unselect">Inicio</a></li>
-                        <li><a href="menu.html" class="unselect">Menu</a></li>
-                        <li><a href="eventos.htm" class="unselect">Eventos</a></li>
-                        <li><a href="reservas.html" class="unselect">Reservas</a></li>
-                        <li><a href="contacto.htm" class="select">Contacto</a></li>
+                        <li><a href="/index.html" class="select">Inicio</a></li>
+                        <li><a href="/pages/menu.html" class="unselect">Menu</a></li>
+                        <li><a href="/pages/eventos.html" class="unselect">Eventos</a></li>
+                        <li><a href="/pages/reservas.html" class="unselect">Reservas</a></li>
+                        <li><a href="/pages/contacto.html" class="unselect">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
-        <section class="container aparece-abajo">
-            <div class="row fs-3">
-                <h1>Contamos con las siguientes líneas de contacto:</h1>
-                <h2>estamos ubicados aqui:</h2>
-                <div class="formulario">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0182801980013!2d-58.38417712429408!3d-34.60369925749707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2suy!4v1759553091426!5m2!1ses-419!2suy"
-                        width="450" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="formulario">
-                    <h2>Mail: coffeehouse@hotmail.com</h2>
-                </div>
-                <div class="formulario">
-                    <h2>Whatsapp: +59899526520</h2>
-                </div>
-                <h2>deja un comentario:</h2>
-                <div>
-                    <form class="mb-4 formulario" action="/Comentarios">
-                        <label for="Comentarios"></label>
-                        <textarea name="Comentarios" id="Comentarios"></textarea>
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
 
+
+    <main>
+        <section class="container">
+            <h1>Bienvenidos a Coffee House</h1>
+            <div class="row">
+                <div class="fotos_menu col-12 col-lg-6 col-xl-7 col-xxl-6 mb-4 aparece-izquierda">
+                    <img src="assets/img/barra.webp" alt="imagen de la barra">
+                </div>
+                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 aparece-izquierda fs-2">
+                    <p>Contamos con una barra completamente equipada para preparar café de la más alta calidad, en todas
+                        sus variedades. Cada taza es elaborada con dedicación y técnica, para que nuestros clientes
+                        disfruten una experiencia gastronómica cálida, auténtica y placentera.</p>
+                </div>
+                <div class="fotos_menu col-12 col-lg-6 col-xl-7 col-xxl-6 mb-4 aparece-derecha">
+                    <img src="assets/img/salon de cafeteria.webp" alt="dentro del local">
+
+                </div>
+                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 aparece-derecha fs-2">
+                    <p>Un espacio pensado para cada momento del día. Nuestro salón ofrece un ambiente amplio y acogedor,
+                        perfecto para disfrutar desde un desayuno tranquilo hasta una cena especial. Ya sea que vengas
+                        por un almuerzo entre amigos o una merienda relajada, siempre hay un rincón esperando por vos.
+                    </p>
+                </div>
+                <div class="fotos_menu col-lg-6 col-xl-7 col-xxl-6 mb-4 aparece-izquierda">
+                    <img src="assets/img/fachada.webp" alt="fachada del local">
+
+                </div>
+                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 aparece-izquierda fs-2">
+                    <p>Nuestra fachada está en el corazón del barrio, La Cafetería se presenta con una estética cálida y
+                        acogedora que invita a entrar. Cada detalle refleja nuestra pasión por el café, la comunidad y
+                        los momentos compartidos. Un espacio pensado para que te sientas como en casa desde el primer
+                        vistazo.</p>
+                </div>
             </div>
 
         </section>
@@ -131,9 +139,13 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
+
+
     </footer>
+
     <!--inicio bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

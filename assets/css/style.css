@@ -119,6 +119,11 @@ footer ul li a {
     align-items: center;
   }
 }
+@media (max-width: 400px) {
+  main section div div img {
+    max-width: 30vh;
+  }
+}
 @keyframes slideFromLeft {
   from {
     opacity: 0;
