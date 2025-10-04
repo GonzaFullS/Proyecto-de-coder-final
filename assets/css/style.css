@@ -57,9 +57,6 @@ header .unselect {
   background-color: rgb(56, 48, 48);
   color: white;
 }
-header {
-  /*final barra de navegacion*/
-}
 header div div ul {
   margin-top: 1rem;
   display: flex;
