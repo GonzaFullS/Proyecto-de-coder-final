@@ -119,7 +119,7 @@ footer ul li a {
     align-items: center;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 514px) {
   main section div div img {
     max-width: 30vh;
   }
