@@ -1,0 +1,156 @@
+@charset "UTF-8";
+body {
+  font-family: "Hind Mysuru", sans-serif;
+}
+
+/*inicio main*/
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+main .aparece-izquierda {
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+main .aparece-derecha {
+  animation: slideFromRight 0.8s ease-out forwards;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main .aparece-abajo {
+  animation: slideUp 0.6s ease-out forwards;
+}
+main .formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+main .imagen_circular {
+  border-radius: 50%;
+  object-fit: cover;
+}
+main .fotos_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  background-color: rgb(54, 54, 54);
+}
+main section {
+  background-color: rgb(191, 191, 191);
+}
+main section h2 {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+main section h1 {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*final main*/
+/*inicio header*/
+header {
+  background-color: rgb(0, 0, 0);
+  /*inicio barra de navegación*/
+}
+header .select {
+  background-color: rgb(220, 215, 215);
+  color: black;
+}
+header .unselect {
+  background-color: rgb(56, 48, 48);
+  color: white;
+}
+header {
+  /*final barra de navegacion*/
+}
+header div div ul {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+header div div ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+header div div ul li a {
+  text-decoration: none;
+  color: white;
+}
+header div div ul li:hover {
+  transform: scale(1.2);
+}
+
+/*final header*/
+/*inicio footer*/
+footer {
+  background-color: rgb(0, 0, 0);
+}
+footer h3 {
+  color: white;
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+}
+footer ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/*final footer*/
+@media (max-width: 1200px) {
+  main .fotos_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .imagen_circular {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  main section div div img {
+    max-width: 50vh;
+  }
+}
+@media (max-width: 992px) {
+  main section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

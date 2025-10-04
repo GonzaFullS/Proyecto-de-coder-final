@@ -1,0 +1,23 @@
+    /*inicio footer*/
+    footer {
+        background-color: rgb(0, 0, 0);
+
+        h3 {
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                a {
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+/*final footer*/
