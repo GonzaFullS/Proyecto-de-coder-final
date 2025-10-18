@@ -1,16 +1,31 @@
     /*inicio footer*/
     footer {
+        margin-top: 2rem;
         background-color: rgb(0, 0, 0);
-
-        h3 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        div {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            justify-content: center;
+            h2 {
             color: white;
-        }
-
-        ul {
+            margin-top: 2rem;
+            }
+            h3 {
+                color: white;
+                margin-top: 2rem;
+            }
+            ul {
             display: flex;
             list-style-type: none;
+            margin-top: 1rem;
 
             li {
+                display: flex;
+                margin-top: 2rem;
                 a {
                     color: rgb(255, 255, 255);
                     text-decoration: none;
@@ -19,5 +34,10 @@
             }
         }
     }
+        }
+
+
+
+
 
 /*final footer*/

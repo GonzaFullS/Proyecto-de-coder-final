@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos Coffee House</title>
     <!-- Metadescripción-->
     <meta name="description"
-        content="Coffee House es tu cafetería de confianza en el corazón del barrio. Disfrutá café de especialidad, eventos únicos y un ambiente cálido todos los días de 8 a 20.">
+        content="Viví momentos únicos en Coffee House. Descubrí nuestros eventos con música en vivo, degustaciones y encuentros especiales en un ambiente cálido y relajado. ¡Consultá aqui la próxima fecha!">
     <!-- keywords -->
     <meta name="keywords"
         content="cafetería, café, coffee house, eventos, reservas, desayuno, merienda, especialidad, barista">
@@ -28,130 +27,104 @@
         rel="stylesheet">
     <!--final fonts-->
 </head>
-
 <body>
-    <!-- movil y tablets -->
-    <header class="d-lg-none">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+    <header>
+        <!--movil y tablets-->
+        <div class="d-lg-none">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="/assets/img/logo.webp" alt="imagen del logo" style="height: 50px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCoffee"
+                        aria-controls="navbarCoffee" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCoffee">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="eventos.html">Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reservas.html">Reservas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--desktop-->
+        <div class="d-none d-lg-block">
             <div class="container">
-
-                <a class="navbar-brand" href="#">
-                    <img src="/assets/img/logo.webp" alt="imagen del logo" style="height: 50px;">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCoffee"
-                    aria-controls="navbarCoffee" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarCoffee">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menú</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="eventos.html">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reservas.html">Reservas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-1 col-md-6 col-lg-7 col-xl-8 col-xxl-8">
+                        <img src="/assets/img/logo.webp" alt="imagen del logo">
+                    </div>
+                    <nav class="col-11 col-md-6 col-lg-5 col-xl-4 col-xxl-4">
+                        <ul>
+                            <li><a href="/index.html" class="unselect">Inicio</a></li>
+                            <li><a href="menu.html" class="unselect">Menu</a></li>
+                            <li><a href="eventos.html" class="select">Eventos</a></li>
+                            <li><a href="reservas.html" class="unselect">Reservas</a></li>
+                            <li><a href="contacto.html" class="unselect">Contacto</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- vista desktop-->
-    <header class="d-none d-lg-block">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-1 col-md-6 col-lg-7 col-xl-8 col-xxl-8">
-                    <img src="/assets/img/logo.webp" alt="imagen del logo">
-                </div>
-                <nav class="col-11 col-md-6 col-lg-5 col-xl-4 col-xxl-4">
-                    <ul>
-                        <li><a href="/index.html" class="unselect">Inicio</a></li>
-                        <li><a href="menu.html" class="unselect">Menu</a></li>
-                        <li><a href="eventos.html" class="select">Eventos</a></li>
-                        <li><a href="reservas.html" class="unselect">Reservas</a></li>
-                        <li><a href="contacto.html" class="unselect">Contacto</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </header>
     <main>
         <section class="container">
             <h1>Próximos eventos</h1>
-            <div class="row">
-                <div class="fotos_menu col-lg-6 col-xl-5 col-xxl-6 mb-4 aparece-izquierda">
+            <div class="row eventos">
+                <div class="fotos_menu col-lg-6 col-xl-5 col-xxl-6 mb-4 zoom">
                     <img src="../assets/img/evento 4.webp" alt="evento Viernes 5 de julio" />
                 </div>
-                <div class="fotos_menu col-lg-6 col-xl-5 col-xxl-6 aparece-izquierda fs-3">
-                    <p>Viernes 5 de julio, Coffee House presenta una edición especial de Coffee Rave. Desde las 17:00
-                        hasta las 22:00 hs, viví una tarde única con los DJ sets de DJ-Naz y Temsy, rodeado de buena
-                        música, arte gráfico y ambiente tropical. Entrada libre, ilustraciones vibrantes, y una
-                        atmósfera pensada para disfrutar café, cócteles y comunidad. ¡No te lo pierdas!</p>
+                <div class="fotos_menu col-lg-6 col-xl-5 col-xxl-6 zoom fs-3">
+                    <p class="back">Viernes 5 de julio, Coffee House presenta una edición especial de Coffee Rave. Desde las 17:00 hasta las 22:00 hs, viví una tarde única con los DJ sets de DJ-Naz y Temsy, rodeado de buena música, arte gráfico y ambiente tropical. Entrada libre, ilustraciones vibrantes, y una atmósfera pensada para disfrutar café, cócteles y comunidad. ¡No te lo pierdas!</p>
                 </div>
-                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 mb-4 aparece-derecha">
+                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 mb-4 zoom">
                     <img src="../assets/img/evento 3.webp" alt="evento Sábado 12 de julio" />
-
                 </div>
-                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 aparece-derecha fs-3">
-                    <p>Sábado 12 de julio, Coffee House te invita a sumarte a una experiencia vibrante y retro con el
-                        evento GOOD WAVE COFFEE RAVE. Desde las 16:00 hasta las 23:00 hs, disfrutá sets en vivo de
-                        Julian Boschetto, Lychar, Benjamin García y Ricardo Aguirre, en un ambiente lleno de ritmo,
-                        ilustraciones lúdicas y energía positiva. ¡Tomá uno, bailá mucho y viví el café como nunca
-                        antes!</p>
+                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 zoom fs-3">
+                    <p class="back">Sábado 12 de julio, Coffee House te invita a sumarte a una experiencia vibrante y retro con el evento GOOD WAVE COFFEE RAVE. Desde las 16:00 hasta las 23:00 hs, disfrutá sets en vivo de Julian Boschetto, Lychar, Benjamin García y Ricardo Aguirre, en un ambiente lleno de ritmo ilustraciones lúdicas y energía positiva. ¡Tomá uno, bailá mucho y viví el café como nunca antes!</p>
                 </div>
-                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 mb-4 aparece-izquierda">
+                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 mb-4 zoom">
                     <img src="../assets/img/evento 2.webp" alt="evento Viernes 18 de julio" />
-
                 </div>
                 <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 aparece-izquierda fs-3">
-                    <p>Viernes 18 de julio, viví una tarde llena de música, energía y sabor en Coffee House, presentado
-                        por LUUM y LOS 40 96.5 FM. Desde las 18:00 hasta las 21:00 hrs, nuestra barra se convierte en
-                        pista con los DJ sets de Loyalty, Kromzz y Tiliko, bajo una atmósfera vibrante y divertida. Te
-                        esperamos para compartir café, beats y buena compañía. ¡Entrada libre!</p>
+                    <p class="back">Viernes 18 de julio, viví una tarde llena de música, energía y sabor en Coffee House, presentado por LUUM y LOS 40 96.5 FM. Desde las 18:00 hasta las 21:00 hrs, nuestra barra se convierte en pista con los DJ sets de Loyalty, Kromzz y Tiliko, bajo una atmósfera vibrante y divertida. Te esperamos para compartir café, beats y buena compañía. ¡Entrada libre!</p>
                 </div>
-                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 mb-4 aparece-derecha">
+                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 mb-4 zoom">
                     <img src="../assets/img/evento 1.webp" alt="evento Sábado 26 de julio" />
-
                 </div>
-                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 aparece-derecha fs-3">
-                    <p>Sábado 26 de julio, Coffee House se transforma en el epicentro de la música y la buena vibra con
-                        el evento gratuito Coffee Rave. Desde las 10:00 AM hasta las 3:00 PM, viví una experiencia única
-                        con un lineup de artistas que prometen encender la pista: Alexwyze, Hendrick, M4ilo, RA, Scoitt
-                        y Tay. Además, contaremos con la presencia especial de Rich Diggy como artista invitado. Te
-                        esperamos para disfrutar de café, música y comunidad como nunca antes.</p>
+                <div class="fotos_menu col-12 col-lg-6 col-xl-5 col-xxl-6 zoom fs-3">
+                    <p class="back">Sábado 26 de julio, Coffee House se transforma en el epicentro de la música y la buena vibra con el evento gratuito Coffee Rave. Desde las 10:00 AM hasta las 3:00 PM, viví una experiencia única con un lineup de artistas que prometen encender la pista: Alexwyze, Hendrick, M4ilo, RA, Scoitt y Tay. Además, contaremos con la presencia especial de Rich Diggy como artista invitado. Te esperamos para disfrutar de café, música y comunidad como nunca antes.</p>
                 </div>
             </div>
-
         </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="row">
-                <h3>Nuestras redes:</h3>
-                <div>
-                    <div class="col-12">
-                        <ul>
-                            <li><a href="http://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
-                            </li>
-                            <li><a href="http://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
-                            <li><a href="https://www.x.com"><i class="fa-brands fa-square-x-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div>
+            <h2>Nuestras redes:</h2>
+            <div>
+                <ul>
+                    <li><a href="http://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    </li>
+                    <li><a href="http://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://www.x.com"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                </ul>
             </div>
         </div>
-
     </footer>
     <!--inicio bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -159,5 +132,4 @@
         crossorigin="anonymous"></script>
     <!--final bootstrap-->
 </body>
-
 </html>

@@ -6,38 +6,48 @@
             align-items: center;
             justify-content: center;
         }
-
         .imagen_circular {
             border-radius: 50%;
             object-fit: cover;
         }
-
         section {
             div {
                 div {
                     img {
-                        max-width: 45vh;
+                        max-width: 70vh;
                     }
                 }
             }
         }
     }
 }
-
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     main {
         section {
             div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                div {
+                    img {
+                        max-width: 70vh;
+                    }
+                }
             }
         }
     }
 }
-
 @media (max-width: 514px) {
+    main {
+        section {
+            div {
+                div {
+                    img {
+                        max-width: 65vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 430px) {
     main {
         section {
             div {

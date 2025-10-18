@@ -1,14 +1,56 @@
 @charset "UTF-8";
+main section h2, main section h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(54, 54, 54);
+}
+
+.bg-fondo {
+  background-color: rgb(54, 54, 54);
+}
+
+.bg-secundario {
+  background-color: rgb(191, 191, 191);
+}
+
+.bg-texto {
+  background-color: rgb(0, 0, 0);
+}
+
+.bg-cuadro {
+  background-color: rgb(152, 152, 152);
+}
+
 body {
   font-family: "Hind Mysuru", sans-serif;
+  background-color: rgb(54, 54, 54);
+  color: rgb(0, 0, 0);
 }
 
 /*inicio main*/
+main {
+  margin-top: 2rem;
+  background-color: rgb(54, 54, 54);
+}
+main .eventos {
+  display: flex;
+  justify-content: space-around;
+}
+main .reservar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 main .formulario {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin-top: 2rem;
+}
+main .formulario img {
+  max-width: 45vh;
 }
 main .imagen_circular {
   border-radius: 50%;
@@ -16,25 +58,49 @@ main .imagen_circular {
 }
 main .fotos_menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-main {
-  background-color: rgb(54, 54, 54);
+main .back {
+  background-color: rgb(152, 152, 152);
+}
+main section div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+main section div div p {
+  margin: 1rem;
 }
 main section {
   background-color: rgb(191, 191, 191);
 }
-main section h2 {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: center;
-}
 main section h1 {
   padding-top: 2rem;
-  display: flex;
-  justify-content: center;
+}
+main section h2 {
+  padding-top: 1rem;
+}
+main section .comentario {
+  max-width: 40vh;
+}
+main section input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease;
+}
+main section .boton {
+  max-width: 35vh;
+  background-color: rgb(54, 54, 54);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
 }
 
 /*final main*/
@@ -77,16 +143,36 @@ header div div ul li:hover {
 /*final header*/
 /*inicio footer*/
 footer {
+  margin-top: 2rem;
   background-color: rgb(0, 0, 0);
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
-footer h3 {
+footer div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-content: center;
+}
+footer div h2 {
   color: white;
+  margin-top: 2rem;
 }
-footer ul {
+footer div h3 {
+  color: white;
+  margin-top: 2rem;
+}
+footer div ul {
   display: flex;
   list-style-type: none;
+  margin-top: 1rem;
 }
-footer ul li a {
+footer div ul li {
+  display: flex;
+  margin-top: 2rem;
+}
+footer div ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 30px;
@@ -105,62 +191,37 @@ footer ul li a {
     object-fit: cover;
   }
   main section div div img {
-    max-width: 45vh;
+    max-width: 70vh;
   }
 }
-@media (max-width: 992px) {
-  main section div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 768px) {
+  main section div div img {
+    max-width: 70vh;
   }
 }
 @media (max-width: 514px) {
   main section div div img {
+    max-width: 65vh;
+  }
+}
+@media (max-width: 430px) {
+  main section div div img {
     max-width: 30vh;
   }
 }
-@keyframes slideFromLeft {
+@keyframes aparecezoom {
   from {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: scale(1);
   }
 }
-@keyframes slideFromRight {
-  from {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.aparece-izquierda {
-  animation: slideFromLeft 0.8s ease-out forwards;
-}
-
-.aparece-derecha {
-  animation: slideFromRight 0.8s ease-out forwards;
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.aparece-abajo {
-  animation: slideUp 0.6s ease-out forwards;
+/* --- Clases reutilizables --- */
+.zoom {
+  animation: aparecezoom 0.8s ease-out forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
